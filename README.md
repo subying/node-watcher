@@ -8,8 +8,12 @@
 ```js
 //加载
 var watcher = require('node-watcher');
+
 //构建新对象  fpath 为文件或文件夹路径  fname为返回的文件名
 var nwt = new watcher(fpath,function(fname){
     //您的代码
 })
+
+//取消监听
+nwt.unwatch();
 
